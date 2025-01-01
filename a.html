@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 2025</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Welcome Section */
+    .welcome {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      background: radial-gradient(circle, #000428, #004e92);
+      color: white;
+    }
+
+    .welcome h1 {
+      font-size: 3.5rem;
+      font-family: 'Lucida Handwriting', cursive;
+      color: #ffd700;
+      text-shadow: 0 0 20px #ff7e00, 0 0 30px #ff4500;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .welcome h2 {
+      font-size: 1.5rem;
+      margin-top: 15px;
+      color: #ffffff;
+      text-shadow: 0 0 15px #ff9e00;
+    }
+
+    .welcome .button {
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .welcome .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Memories Section */
+    .memories {
+      display: none;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4e73df, #1c3b70);
+      padding: 50px 20px;
+      overflow-y: auto;
+    }
+
+    .memories h1 {
+      font-size: 2.5rem;
+      color: #ffd700;
+      margin-bottom: 30px;
+      text-shadow: 0 0 15px #ff9e00;
+      text-align: center;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .next-button {
+      margin-top: 30px;
+      display: block;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+      border: none;
+      border-radius: 30px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 30px auto;
+    }
+
+    .next-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Video Section */
+    .video-section {
+      display: none;
+      position: relative;
+      height: 100vh;
+      background: black;
+    }
+
+    .video-section video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Welcome Section -->
+  <div class="welcome">
+    <h1>✨ Happy New Year 2025 Doraemon ✨</h1>
+    <h2>Thank you for coming into my life maa, You are my sister and bestfriend forever</h2>
+    <button class="button" onclick="showMemories()">Click Here to Begin</button>
+    
+  </div>
+  
+
+
+  <!-- Memories Section -->
+  <div class="memories">
+    <h1>Our Beautiful Memories ❤</h1>
+    <div class="photo-grid">
+      <img src="images/IMG_1997.jpg" alt="Memory 1">
+      <img src="images/IMG_6375.JPG" alt="Memory 2">
+      <img src="images/IMG_6410.JPG" alt="Memory 3">
+      <img src="images/22103b0cf67743152ec546542d192d12.jpg" alt="Memory 4">
+    </div>
+    <button class="next-button" onclick="showVideo()">Next</button>
+  </div>
+
+  <!-- Video Section -->
+  <div class="video-section">
+    <video autoplay muted loop>
+      <source src="C:\Users\Ramesh\Downloads\newyear\videos\IMG_6458.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script>
+    function showMemories() {
+      document.querySelector('.welcome').style.display = 'none';
+      document.querySelector('.memories').style.display = 'block';
+    }
+
+    function showVideo() {
+      document.querySelector('.memories').style.display = 'none';
+      document.querySelector('.video-section').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
